@@ -65,6 +65,17 @@
   line-height: 1.7;
 }
 
+.hero-section .progress {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #1d4ed8;
+  background: #dbeafe;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -77,6 +88,11 @@
   border-radius: 16px;
   background: #ffffff;
   box-shadow: 0 8px 24px rgb(15 23 42 / 6%);
+}
+
+.learning-card.completed {
+  border-color: #86efac;
+  background: #f0fdf4;
 }
 
 .card-number {
@@ -101,6 +117,28 @@
   margin: 0;
   color: #64748b;
   line-height: 1.6;
+}
+
+.lesson-button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #2563eb;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lesson-button:hover {
+  background: #1d4ed8;
+}
+
+.learning-card.completed .lesson-button {
+  color: #166534;
+  background: #bbf7d0;
 }
 
 @media (max-width: 700px) {
